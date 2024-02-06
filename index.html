@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOOKS KEY</title>
+    <link rel="stylesheet" href="./resources/styles.css" />
+    <link rel="icon" href="./resources/book.png" />
+  </head>
+  <body>
+    <nav>
+      <h1>MY BOOKS</h1>
+    </nav>
+    <div class="container">
+      <div class="book-container">
+        <h1 id="title">Persepolis</h1>
+        <h5 id="author">Marjane Satrapi</h5>
+        <p id="description">
+          Marjane Satrapi's "Persepolis" is an autobiographical graphic novel
+          that vividly depicts her childhood and early adult years in Iran
+          during and after the Islamic Revolution. Through powerful
+          illustrations and a compelling narrative, Satrapi captures the
+          complexities of growing up amid political upheaval and cultural
+          identity.whose journey unfolds against political intrigue,
+          environmental challenges, and the pursuit of the valuable spice
+          melange.
+        </p>
+        <button class="del-btn" onclick="deleteBook(event)">Delete</button>
+      </div>
+
+      <div class="book-container">
+        <h1 id="title">The Night Circus</h1>
+        <h5 id="author">Erin Morgenstern</h5>
+        <p id="description">
+          The Night Circus" is a mesmerizing fantasy novel that weaves a tale of
+          magic, love, and mystery. The story revolves around a magical
+          competition between two young illusionists, Celia and Marco, who are
+          bound by a powerful enchantment. and misunderstandings in a time,
+          exploring themes of class, reputation, and the enduring power of true
+          love. The venue for their extraordinary contest is a mysterious and
+          enchanting circus that only appears at night.
+        </p>
+        <button class="del-btn" onclick="deleteBook(event)">Delete</button>
+      </div>
+
+      <div class="book-container">
+        <h1 id="title">A Brief History of Humankind</h1>
+        <h5 id="author">Yuval Noah Harari</h5>
+        <p id="description">
+          Yuval Noah Harari's "Sapiens" takes readers on a journey through the
+          history of Homo sapiens. From the cognitive and agricultural
+          revolutions to the impact of scientific advancements, Harari explores
+          the forces that shaped human civilization, providing a
+          thought-provoking and engaging perspective on our shared history.on
+          the nature of power and freedom.
+        </p>
+        <button class="del-btn" onclick="deleteBook(event)">Delete</button>
+      </div>
+
+      <div class="book-container">
+        <h1 id="title">Dune</h1>
+        <h5 id="author">Frank Herbert</h5>
+        <p id="description">
+          "Dune" is a science fiction epic set in a distant future where noble
+          families vie for control of desert planets. At its core is the story
+          of Paul Atreides, whose journey unfolds against political intrigue,
+          environmental challenges, and the pursuit of the valuable spice
+          melange.
+        </p>
+        <button class="del-btn" onclick="deleteBook(event)">Delete</button>
+      </div>
+
+      <div class="book-container">
+        <h1 id="title">Pride and Prejudice</h1>
+        <h5 id="author">Jane Austen</h5>
+        <p id="description">
+          "Pride and Prejudice" is a classic romance novel set in 19th-century
+          England. The spirited Elizabeth Bennet navigates societal
+          expectations, love, and misunderstandings in a tale that transcends
+          time, exploring themes of class, reputation, and the enduring power of
+          true love.
+        </p>
+        <button class="del-btn" onclick="deleteBook(event)">Delete</button>
+      </div>
+
+      <div class="book-container">
+        <h1 id="title">Atomic Habits</h1>
+        <h5 id="author">James Clear</h5>
+        <p id="description">
+          In "Atomic Habits," James Clear explores the science of habits,
+          offering practical insights into how tiny changes can lead to
+          remarkable results. With a focus on behavior, decision-making, and
+          continuous improvement, Clear's book provides a roadmap for personal
+          and professional growth through habit formation.
+        </p>
+        <button class="del-btn" onclick="deleteBook(event)">Delete</button>
+      </div>
+
+      <div class="book-container">
+        <h1 id="title">1984</h1>
+        <h5 id="author">George Orwell</h5>
+        <p id="description">
+          George Orwell's "1984" is a classic dystopian novel that paints a
+          chilling portrait of a totalitarian society. Set in a world where the
+          government controls every aspect of citizens' lives, the novel
+          explores themes of surveillance, propaganda, and resistance, leaving
+          readers with a haunting reflection on the nature of power and freedom.
+        </p>
+        <button class="del-btn" onclick="deleteBook(event)">Delete</button>
+      </div>
+    </div>
+    <div class="overlay"></div>
+
+    <div class="pop-container">
+      <h2>Add Book</h2>
+      <form id="form-rel">
+        <input
+          type="text"
+          id="book-input"
+          placeholder="Enter Book Title"
+          required
+        />
+        <input
+          type="text"
+          id="auther-input"
+          placeholder="Enter Author Name"
+          required
+        />
+        <textarea
+          placeholder="Short Description About The Book"
+          id="description-input"
+          required
+        ></textarea>
+        <button class="popOne-btn" id="add-btn">Add</button>
+        <button class="popTwo-btn">Cancel</button>
+      </form>
+    </div>
+    <button class="addnew">+</button>
+    <script src="./resources/script.js"></script>
+  </body>
+</html>

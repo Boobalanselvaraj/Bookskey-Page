@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  background-color: #f84c52;
+  color: black;
+  padding: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.container {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-left: 20px;
+}
+.book-container {
+  width: 28%;
+  text-align: justify;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+}
+.book-container h1,
+h5 {
+  color: #f84c52;
+}
+@media screen and (max-width: 1075px) {
+  .book-container {
+    flex-grow: 1;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 30px;
+    margin-left: 0%;
+  }
+  .book-container {
+    width: 100%;
+  }
+}
+
+.del-btn {
+  padding: 9px;
+  width: 30%;
+  margin-top: 3px;
+  border-radius: 10px;
+  color: black;
+  background-color: #f84c52;
+  border-style: solid;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+.addnew {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: none;
+  background-color: #f84c52;
+  border-radius: 50%;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+/* popo up */
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  opacity: 0.8;
+  z-index: 1;
+  display: none;
+}
+
+.pop-container {
+  background-color: #f84c52;
+  padding: 30px;
+  border-radius: 20px;
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: none;
+  min-width: 270px;
+  transition: all 500ms;
+}
+.pop-container:hover {
+  filter: drop-shadow(1px 0px 15px #ff9318);
+}
+.pop-container input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  width: 100%;
+  padding: 5px;
+  margin: 5px;
+  font-size: 15px;
+}
+.pop-container textarea {
+  background: transparent;
+  width: 100%;
+  border: none;
+  /* border: 1px solid rgb(0, 0, 0); */
+  padding: 5px;
+  font-size: 15px;
+}
+.popOne-btn,
+.popTwo-btn {
+  padding: 8px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  margin-top: 5px;
+  border: none;
+  border-radius: 10px;
+  width: 20%;
+  transition: all 500ms;
+}
+.popOne-btn:hover {
+  background-color: #7bff00;
+  color: black;
+  font-weight: bold;
+}
+.popTwo-btn:hover {
+  background-color: #7bff00;
+  color: black;
+  font-weight: bold;
+}
+.pop-container input,
+textarea::placeholder {
+  color: rgb(63, 35, 35);
+}
+.pop-container input::placeholder {
+  color: rgb(61, 38, 38);
+}
+.pop-container input:focus {
+  outline: none;
+  color: aliceblue;
+}
+.pop-container textarea:focus {
+  outline: none;
+  color: aliceblue;
+}
